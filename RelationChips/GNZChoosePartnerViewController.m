@@ -53,23 +53,24 @@
 -(void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
 {
     if (property == kABPersonPhoneProperty) {
-        NSLog(@"Selected a phone property");
-        CFIndex selectedIndex = ABMultiValueGetIndexForIdentifier(ABRecordCopyValue(person, property), identifier);
-        NSString *number = [NSString stringWithFormat:@"%@", ABMultiValueCopyValueAtIndex(ABRecordCopyValue(person, property), selectedIndex)];
+        GNZPartner *newPartner = [[GNZPartner alloc] initWithPerson:person property:property identifier:identifier];
         
-        NSLog(@"Selected Phone Index: %ld with Number: %@", selectedIndex, number);
-        
-        NSString *contactName = CFBridgingRelease(ABRecordCopyCompositeName(person));
-        self.nameLabel.text = [NSString stringWithFormat:@"%@", contactName ? contactName : @"No Name"];
-        self.phoneLabel.text = number;
-        
-        self.navigationItem.backBarButtonItem.title = CFBridgingRelease( ABRecordCopyValue(person, kABPersonFirstNameProperty));
+        [self updateUIWithPartner:newPartner];
         
         GNZPrizesTableViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:@"prizesVC"];
+        
         [self.navigationController pushViewController:nextVC animated:YES];
     } else {
         NSLog(@"Did not choose a number!");
     }
+}
+
+-(void)updateUIWithPartner:(GNZPartner *)partner
+{
+    self.nameLabel.text = [NSString stringWithFormat:@"%@ %@", partner.firstName, partner.lastName];
+    self.phoneLabel.text = partner.phoneNumber;
+    
+    self.navigationItem.backBarButtonItem.title = partner.firstName;
 }
 
 

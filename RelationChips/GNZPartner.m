@@ -10,26 +10,22 @@
 
 @interface GNZPartner ()
 
-@property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *phoneNumber;
 
 @end
 
 @implementation GNZPartner
 
-- (instancetype)initWithName:(NSString *)aName phoneNumber:(NSString *)aNumber;
+-(instancetype)initWithPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
 {
     self = [super init];
     if (self) {
-        _name = aName;
-        _phoneNumber = aNumber;
+        _firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
+        _lastName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonLastNameProperty));
+        
+        CFIndex selectedIndex = ABMultiValueGetIndexForIdentifier(ABRecordCopyValue(person, property), identifier);
+        _phoneNumber = [NSString stringWithFormat:@"%@", ABMultiValueCopyValueAtIndex(ABRecordCopyValue(person, property), selectedIndex)];
     }
     return self;
-}
-
--(instancetype)init
-{
-    return [self initWithName:@"" phoneNumber:@""];
 }
 
 @end
