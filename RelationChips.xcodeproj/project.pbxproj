@@ -17,6 +17,8 @@
 		7254840F1A33E96200B6B8EF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7254840D1A33E96200B6B8EF /* AddressBook.framework */; };
 		725484101A33E96200B6B8EF /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7254840E1A33E96200B6B8EF /* AddressBookUI.framework */; };
 		725484131A34091D00B6B8EF /* GNZPrizesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */; };
+		725484171A34923A00B6B8EF /* GNZPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484161A34923A00B6B8EF /* GNZPartner.m */; };
+		7254841B1A34931100B6B8EF /* GNZPrize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7254841A1A34931100B6B8EF /* GNZPrize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		7254840E1A33E96200B6B8EF /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		725484111A34091D00B6B8EF /* GNZPrizesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZPrizesTableViewController.h; sourceTree = "<group>"; };
 		725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPrizesTableViewController.m; sourceTree = "<group>"; };
+		725484151A34923A00B6B8EF /* GNZPartner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZPartner.h; sourceTree = "<group>"; };
+		725484161A34923A00B6B8EF /* GNZPartner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPartner.m; sourceTree = "<group>"; };
+		725484191A34931100B6B8EF /* GNZPrize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZPrize.h; sourceTree = "<group>"; };
+		7254841A1A34931100B6B8EF /* GNZPrize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPrize.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 			children = (
 				725483E71A33DE2000B6B8EF /* AppDelegate.h */,
 				725483E81A33DE2000B6B8EF /* AppDelegate.m */,
+				725484181A34923F00B6B8EF /* Models */,
 				725484141A3490D200B6B8EF /* View Controllers */,
 				725483ED1A33DE2000B6B8EF /* Main.storyboard */,
 				725483F01A33DE2000B6B8EF /* Images.xcassets */,
@@ -138,6 +145,17 @@
 				725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		725484181A34923F00B6B8EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				725484151A34923A00B6B8EF /* GNZPartner.h */,
+				725484161A34923A00B6B8EF /* GNZPartner.m */,
+				725484191A34931100B6B8EF /* GNZPrize.h */,
+				7254841A1A34931100B6B8EF /* GNZPrize.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +261,8 @@
 				725483EC1A33DE2000B6B8EF /* GNZChoosePartnerViewController.m in Sources */,
 				725483E91A33DE2000B6B8EF /* AppDelegate.m in Sources */,
 				725484131A34091D00B6B8EF /* GNZPrizesTableViewController.m in Sources */,
+				725484171A34923A00B6B8EF /* GNZPartner.m in Sources */,
+				7254841B1A34931100B6B8EF /* GNZPrize.m in Sources */,
 				725483E61A33DE2000B6B8EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

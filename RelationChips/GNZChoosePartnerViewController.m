@@ -9,6 +9,7 @@
 #import "GNZChoosePartnerViewController.h"
 #import <AddressBookUI/AddressBookUI.h>
 #import "GNZPrizesTableViewController.h"
+#import "GNZPartner.h"
 
 @interface GNZChoosePartnerViewController () <ABPeoplePickerNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -66,6 +67,8 @@
         
         GNZPrizesTableViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:@"prizesVC"];
         [self.navigationController pushViewController:nextVC animated:YES];
+    } else {
+        NSLog(@"Did not choose a number!");
     }
 }
 
