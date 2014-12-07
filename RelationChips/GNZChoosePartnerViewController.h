@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GNZChooseRelationshipViewController : UIViewController
+@interface GNZChoosePartnerViewController : UIViewController
 
 
 @end

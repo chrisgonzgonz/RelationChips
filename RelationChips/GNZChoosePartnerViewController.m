@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 GNZ. All rights reserved.
 //
 
-#import "GNZChooseRelationshipViewController.h"
+#import "GNZChoosePartnerViewController.h"
 #import <AddressBookUI/AddressBookUI.h>
 #import "GNZPrizesTableViewController.h"
 
-@interface GNZChooseRelationshipViewController () <ABPeoplePickerNavigationControllerDelegate>
+@interface GNZChoosePartnerViewController () <ABPeoplePickerNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
 
 @end
 
-@implementation GNZChooseRelationshipViewController
+@implementation GNZChoosePartnerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

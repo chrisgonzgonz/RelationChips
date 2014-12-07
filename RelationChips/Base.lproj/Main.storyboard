@@ -7,7 +7,7 @@
         <!--Choose Your Boo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="GNZChooseRelationshipViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="GNZChoosePartnerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
