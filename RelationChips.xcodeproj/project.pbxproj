@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		725483E61A33DE2000B6B8EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 725483E51A33DE2000B6B8EF /* main.m */; };
 		725483E91A33DE2000B6B8EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 725483E81A33DE2000B6B8EF /* AppDelegate.m */; };
-		725483EC1A33DE2000B6B8EF /* ChooseRelationshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725483EB1A33DE2000B6B8EF /* ChooseRelationshipViewController.m */; };
+		725483EC1A33DE2000B6B8EF /* GNZChooseRelationshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725483EB1A33DE2000B6B8EF /* GNZChooseRelationshipViewController.m */; };
 		725483EF1A33DE2000B6B8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 725483ED1A33DE2000B6B8EF /* Main.storyboard */; };
 		725483F11A33DE2000B6B8EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725483F01A33DE2000B6B8EF /* Images.xcassets */; };
 		725483F41A33DE2000B6B8EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725483F21A33DE2000B6B8EF /* LaunchScreen.xib */; };
 		725484001A33DE2000B6B8EF /* RelationChipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725483FF1A33DE2000B6B8EF /* RelationChipsTests.m */; };
 		7254840F1A33E96200B6B8EF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7254840D1A33E96200B6B8EF /* AddressBook.framework */; };
 		725484101A33E96200B6B8EF /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7254840E1A33E96200B6B8EF /* AddressBookUI.framework */; };
-		725484131A34091D00B6B8EF /* PrizesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484121A34091D00B6B8EF /* PrizesTableViewController.m */; };
+		725484131A34091D00B6B8EF /* GNZPrizesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,8 @@
 		725483E51A33DE2000B6B8EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		725483E71A33DE2000B6B8EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		725483E81A33DE2000B6B8EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		725483EA1A33DE2000B6B8EF /* ChooseRelationshipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseRelationshipViewController.h; sourceTree = "<group>"; };
-		725483EB1A33DE2000B6B8EF /* ChooseRelationshipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseRelationshipViewController.m; sourceTree = "<group>"; };
+		725483EA1A33DE2000B6B8EF /* GNZChooseRelationshipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNZChooseRelationshipViewController.h; sourceTree = "<group>"; };
+		725483EB1A33DE2000B6B8EF /* GNZChooseRelationshipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNZChooseRelationshipViewController.m; sourceTree = "<group>"; };
 		725483EE1A33DE2000B6B8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		725483F01A33DE2000B6B8EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		725483F31A33DE2000B6B8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -45,8 +45,8 @@
 		725483FF1A33DE2000B6B8EF /* RelationChipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelationChipsTests.m; sourceTree = "<group>"; };
 		7254840D1A33E96200B6B8EF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		7254840E1A33E96200B6B8EF /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		725484111A34091D00B6B8EF /* PrizesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrizesTableViewController.h; sourceTree = "<group>"; };
-		725484121A34091D00B6B8EF /* PrizesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrizesTableViewController.m; sourceTree = "<group>"; };
+		725484111A34091D00B6B8EF /* GNZPrizesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZPrizesTableViewController.h; sourceTree = "<group>"; };
+		725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPrizesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +94,7 @@
 			children = (
 				725483E71A33DE2000B6B8EF /* AppDelegate.h */,
 				725483E81A33DE2000B6B8EF /* AppDelegate.m */,
-				725483EA1A33DE2000B6B8EF /* ChooseRelationshipViewController.h */,
-				725483EB1A33DE2000B6B8EF /* ChooseRelationshipViewController.m */,
-				725484111A34091D00B6B8EF /* PrizesTableViewController.h */,
-				725484121A34091D00B6B8EF /* PrizesTableViewController.m */,
+				725484141A3490D200B6B8EF /* View Controllers */,
 				725483ED1A33DE2000B6B8EF /* Main.storyboard */,
 				725483F01A33DE2000B6B8EF /* Images.xcassets */,
 				725483F21A33DE2000B6B8EF /* LaunchScreen.xib */,
@@ -130,6 +127,17 @@
 				725483FE1A33DE2000B6B8EF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		725484141A3490D200B6B8EF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				725483EA1A33DE2000B6B8EF /* GNZChooseRelationshipViewController.h */,
+				725483EB1A33DE2000B6B8EF /* GNZChooseRelationshipViewController.m */,
+				725484111A34091D00B6B8EF /* GNZPrizesTableViewController.h */,
+				725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				725483EC1A33DE2000B6B8EF /* ChooseRelationshipViewController.m in Sources */,
+				725483EC1A33DE2000B6B8EF /* GNZChooseRelationshipViewController.m in Sources */,
 				725483E91A33DE2000B6B8EF /* AppDelegate.m in Sources */,
-				725484131A34091D00B6B8EF /* PrizesTableViewController.m in Sources */,
+				725484131A34091D00B6B8EF /* GNZPrizesTableViewController.m in Sources */,
 				725483E61A33DE2000B6B8EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 GNZ. All rights reserved.
 //
 
-#import "PrizesTableViewController.h"
+#import "GNZPrizesTableViewController.h"
 
-@interface PrizesTableViewController ()
+@interface GNZPrizesTableViewController ()
 
 @end
 
-@implementation PrizesTableViewController
+@implementation GNZPrizesTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,7 +61,7 @@
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [button setTitle:@"Custom Prize!" forState:UIControlStateNormal];
+    [button setTitle:@"Or Pick a Custom Prize!" forState:UIControlStateNormal];
     [button setBackgroundColor:[UIColor greenColor]];
     [button setTintColor:[UIColor whiteColor]];
     return button;

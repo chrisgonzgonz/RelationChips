@@ -7,7 +7,7 @@
         <!--Choose Your Boo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ChooseRelationshipViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="GNZChooseRelationshipViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="949" y="136"/>
         </scene>
-        <!--Prizes-->
+        <!--Pick a Prize-->
         <scene sceneID="V24-FS-Bzg">
             <objects>
-                <tableViewController storyboardIdentifier="prizesVC" id="ITQ-8h-2AR" customClass="PrizesTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="prizesVC" id="ITQ-8h-2AR" customClass="GNZPrizesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="44" sectionFooterHeight="22" id="Bvg-df-I2R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +95,7 @@
                             <outlet property="delegate" destination="ITQ-8h-2AR" id="5OE-3c-6jb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Prizes" id="Mwn-aN-Br9">
+                    <navigationItem key="navigationItem" title="Pick a Prize" id="Mwn-aN-Br9">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="OAo-K1-y7M"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

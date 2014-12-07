@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PrizesTableViewController.h
 //  RelationChips
 //
 //  Created by Chris Gonzales on 12/6/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChooseRelationshipViewController : UIViewController
-
+@interface GNZPrizesTableViewController : UITableViewController
 
 @end
-

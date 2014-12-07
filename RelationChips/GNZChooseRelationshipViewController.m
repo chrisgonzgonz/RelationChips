@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 GNZ. All rights reserved.
 //
 
-#import "ChooseRelationshipViewController.h"
+#import "GNZChooseRelationshipViewController.h"
 #import <AddressBookUI/AddressBookUI.h>
-#import "PrizesTableViewController.h"
+#import "GNZPrizesTableViewController.h"
 
-@interface ChooseRelationshipViewController () <ABPeoplePickerNavigationControllerDelegate>
+@interface GNZChooseRelationshipViewController () <ABPeoplePickerNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
 
 @end
 
-@implementation ChooseRelationshipViewController
+@implementation GNZChooseRelationshipViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -64,7 +64,7 @@
         
         self.navigationItem.backBarButtonItem.title = CFBridgingRelease( ABRecordCopyValue(person, kABPersonFirstNameProperty));
         
-        PrizesTableViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:@"prizesVC"];
+        GNZPrizesTableViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:@"prizesVC"];
         [self.navigationController pushViewController:nextVC animated:YES];
     }
 }
