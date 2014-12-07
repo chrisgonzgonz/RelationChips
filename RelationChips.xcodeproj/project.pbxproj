@@ -19,6 +19,7 @@
 		725484131A34091D00B6B8EF /* GNZPrizesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */; };
 		725484171A34923A00B6B8EF /* GNZPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484161A34923A00B6B8EF /* GNZPartner.m */; };
 		7254841B1A34931100B6B8EF /* GNZPrize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7254841A1A34931100B6B8EF /* GNZPrize.m */; };
+		7254841E1A349E1300B6B8EF /* GNZPrizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7254841D1A349E1300B6B8EF /* GNZPrizeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		725484161A34923A00B6B8EF /* GNZPartner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPartner.m; sourceTree = "<group>"; };
 		725484191A34931100B6B8EF /* GNZPrize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZPrize.h; sourceTree = "<group>"; };
 		7254841A1A34931100B6B8EF /* GNZPrize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPrize.m; sourceTree = "<group>"; };
+		7254841C1A349E1300B6B8EF /* GNZPrizeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZPrizeManager.h; sourceTree = "<group>"; };
+		7254841D1A349E1300B6B8EF /* GNZPrizeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPrizeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				725484161A34923A00B6B8EF /* GNZPartner.m */,
 				725484191A34931100B6B8EF /* GNZPrize.h */,
 				7254841A1A34931100B6B8EF /* GNZPrize.m */,
+				7254841C1A349E1300B6B8EF /* GNZPrizeManager.h */,
+				7254841D1A349E1300B6B8EF /* GNZPrizeManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				725483E91A33DE2000B6B8EF /* AppDelegate.m in Sources */,
 				725484131A34091D00B6B8EF /* GNZPrizesTableViewController.m in Sources */,
 				725484171A34923A00B6B8EF /* GNZPartner.m in Sources */,
+				7254841E1A349E1300B6B8EF /* GNZPrizeManager.m in Sources */,
 				7254841B1A34931100B6B8EF /* GNZPrize.m in Sources */,
 				725483E61A33DE2000B6B8EF /* main.m in Sources */,
 			);
