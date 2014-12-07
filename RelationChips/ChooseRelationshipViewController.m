@@ -8,6 +8,7 @@
 
 #import "ChooseRelationshipViewController.h"
 #import <AddressBookUI/AddressBookUI.h>
+#import "PrizesTableViewController.h"
 
 @interface ChooseRelationshipViewController () <ABPeoplePickerNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -60,6 +61,11 @@
         NSString *contactName = CFBridgingRelease(ABRecordCopyCompositeName(person));
         self.nameLabel.text = [NSString stringWithFormat:@"%@", contactName ? contactName : @"No Name"];
         self.phoneLabel.text = number;
+        
+        self.navigationItem.backBarButtonItem.title = CFBridgingRelease( ABRecordCopyValue(person, kABPersonFirstNameProperty));
+        
+        PrizesTableViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:@"prizesVC"];
+        [self.navigationController pushViewController:nextVC animated:YES];
     }
 }
 

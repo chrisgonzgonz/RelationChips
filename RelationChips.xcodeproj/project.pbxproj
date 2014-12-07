@@ -16,6 +16,7 @@
 		725484001A33DE2000B6B8EF /* RelationChipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725483FF1A33DE2000B6B8EF /* RelationChipsTests.m */; };
 		7254840F1A33E96200B6B8EF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7254840D1A33E96200B6B8EF /* AddressBook.framework */; };
 		725484101A33E96200B6B8EF /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7254840E1A33E96200B6B8EF /* AddressBookUI.framework */; };
+		725484131A34091D00B6B8EF /* PrizesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484121A34091D00B6B8EF /* PrizesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		725483FF1A33DE2000B6B8EF /* RelationChipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelationChipsTests.m; sourceTree = "<group>"; };
 		7254840D1A33E96200B6B8EF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		7254840E1A33E96200B6B8EF /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		725484111A34091D00B6B8EF /* PrizesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrizesTableViewController.h; sourceTree = "<group>"; };
+		725484121A34091D00B6B8EF /* PrizesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrizesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				725483E81A33DE2000B6B8EF /* AppDelegate.m */,
 				725483EA1A33DE2000B6B8EF /* ChooseRelationshipViewController.h */,
 				725483EB1A33DE2000B6B8EF /* ChooseRelationshipViewController.m */,
+				725484111A34091D00B6B8EF /* PrizesTableViewController.h */,
+				725484121A34091D00B6B8EF /* PrizesTableViewController.m */,
 				725483ED1A33DE2000B6B8EF /* Main.storyboard */,
 				725483F01A33DE2000B6B8EF /* Images.xcassets */,
 				725483F21A33DE2000B6B8EF /* LaunchScreen.xib */,
@@ -229,6 +234,7 @@
 			files = (
 				725483EC1A33DE2000B6B8EF /* ChooseRelationshipViewController.m in Sources */,
 				725483E91A33DE2000B6B8EF /* AppDelegate.m in Sources */,
+				725484131A34091D00B6B8EF /* PrizesTableViewController.m in Sources */,
 				725483E61A33DE2000B6B8EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
