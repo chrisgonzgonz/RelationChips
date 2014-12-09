@@ -33,6 +33,7 @@
     
     GNZPrize *newPrize = [[GNZPrize alloc] initWithTitle:self.prizeTitleField.text value:[NSNumber numberWithInteger:[prizeValue integerValue]]];
     [[GNZPrizeManager sharedManager] addPrize:newPrize];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

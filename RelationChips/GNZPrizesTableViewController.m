@@ -25,13 +25,14 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     self.prizeManager = [GNZPrizeManager sharedManager];
+    [self.prizeManager addObserver:self forKeyPath:@"prizes" options:NSKeyValueObservingOptionNew context:nil];
     
     self.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPrize)],self.editButtonItem];
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.tableView reloadData];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 -(void)addPrize
@@ -40,9 +41,9 @@
     [self presentViewController:nextVC animated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
