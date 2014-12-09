@@ -7,8 +7,13 @@
 //
 
 #import "GNZPrizesTableViewController.h"
+#import "GNZPrizeManager.h"
+#import "GNZPrize.h"
+#import "GNZAddPrizeViewController.h"
 
 @interface GNZPrizesTableViewController ()
+
+@property (strong, nonatomic) GNZPrizeManager *prizeManager;
 
 @end
 
@@ -19,10 +24,20 @@
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+    self.prizeManager = [GNZPrizeManager sharedManager];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil],self.editButtonItem];
+    self.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPrize)],self.editButtonItem];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
+
+-(void)addPrize
+{
+    GNZAddPrizeViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:@"addPrizeVC"];
+    [self presentViewController:nextVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,14 +54,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 20;
+    return [self.prizeManager.prizes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prizeCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
-    cell.detailTextLabel.text = @"$$$";
+    GNZPrize *currentPrize = [self.prizeManager prizes][indexPath.row];
+    
+    cell.textLabel.text = currentPrize.title;
+    cell.detailTextLabel.text = [currentPrize.value stringValue];
     
     return cell;
 }

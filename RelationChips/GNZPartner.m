@@ -23,7 +23,7 @@
         _lastName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonLastNameProperty));
         
         CFIndex selectedIndex = ABMultiValueGetIndexForIdentifier(ABRecordCopyValue(person, property), identifier);
-        _phoneNumber = [NSString stringWithFormat:@"%@", ABMultiValueCopyValueAtIndex(ABRecordCopyValue(person, property), selectedIndex)];
+        _phoneNumber = [NSString stringWithFormat:@"%@", CFBridgingRelease(ABMultiValueCopyValueAtIndex(ABRecordCopyValue(person, property), selectedIndex))];
     }
     return self;
 }

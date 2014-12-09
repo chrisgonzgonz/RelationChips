@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "GNZPrize.h"
 
-@interface GNZPrizeManager : NSObject {
-    NSMutableArray *_prizes;
-}
+@interface GNZPrizeManager : NSObject
+
+@property (nonatomic, readonly, copy) NSArray *prizes;
 
 + (id)sharedManager;
-- (NSArray *)prizes;
+
 - (void)addPrize:(GNZPrize *)prize;
+
+- (BOOL)saveChanges;
 
 @end

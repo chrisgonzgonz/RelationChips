@@ -53,7 +53,7 @@
                     <connections>
                         <outlet property="nameLabel" destination="BUB-YV-LzG" id="P8H-nd-Y3b"/>
                         <outlet property="phoneLabel" destination="fcf-WE-v2K" id="muD-Vn-6JY"/>
-                        <segue destination="ITQ-8h-2AR" kind="show" id="cyy-AF-dxl"/>
+                        <segue destination="ITQ-8h-2AR" kind="show" identifier="prizesViewSegue" id="cyy-AF-dxl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -103,6 +103,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv2-cF-LNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1374" y="136"/>
+        </scene>
+        <!--Add Prize View Controller-->
+        <scene sceneID="DSN-CS-JAg">
+            <objects>
+                <viewController storyboardIdentifier="addPrizeVC" id="Nay-i1-IdG" customClass="GNZAddPrizeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A7p-8D-Bc8"/>
+                        <viewControllerLayoutGuide type="bottom" id="UN3-4M-w85"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a9f-sX-9pn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add A New Prize to Your List!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crs-Hh-DMQ">
+                                <rect key="frame" x="16" y="47" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prize Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4KB-iU-TPJ">
+                                <rect key="frame" x="16" y="120" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prize Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67m-NT-36J">
+                                <rect key="frame" x="16" y="181" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFU-zM-U0b">
+                                <rect key="frame" x="16" y="284" width="288" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="Nay-i1-IdG" eventType="touchUpInside" id="OoA-9q-bT2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2D-dG-aQb">
+                                <rect key="frame" x="16" y="336" width="288" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="Nay-i1-IdG" eventType="touchUpInside" id="hKm-r0-Vb2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="prizeTitleField" destination="4KB-iU-TPJ" id="yyi-Lj-Aog"/>
+                        <outlet property="prizeValueField" destination="67m-NT-36J" id="IrU-wz-xZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrI-XH-y3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MYR-xH-9Pk">

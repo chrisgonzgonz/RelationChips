@@ -10,11 +10,25 @@
 
 @interface GNZPrize ()
 
-@property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) NSNumber *value;
-
 @end
+
 @implementation GNZPrize
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if (self) {
+        _title = [aDecoder decodeObjectForKey:@"title"];
+        _value = [aDecoder decodeObjectForKey:@"value"];
+    }
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.title forKey:@"title"];
+    [aCoder encodeObject:self.value forKey:@"value"];
+}
 
 - (instancetype)initWithTitle:(NSString *)aTitle value:(NSNumber *)aValue
 {

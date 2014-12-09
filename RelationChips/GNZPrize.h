@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GNZPrize : NSObject
+@interface GNZPrize : NSObject <NSCoding>
+
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSNumber *value;
+
+- (instancetype)initWithTitle:(NSString *)aTitle value:(NSNumber *)aValue;
 
 @end

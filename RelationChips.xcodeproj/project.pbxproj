@@ -20,6 +20,7 @@
 		725484171A34923A00B6B8EF /* GNZPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484161A34923A00B6B8EF /* GNZPartner.m */; };
 		7254841B1A34931100B6B8EF /* GNZPrize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7254841A1A34931100B6B8EF /* GNZPrize.m */; };
 		7254841E1A349E1300B6B8EF /* GNZPrizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7254841D1A349E1300B6B8EF /* GNZPrizeManager.m */; };
+		725484211A34B2FE00B6B8EF /* GNZAddPrizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725484201A34B2FE00B6B8EF /* GNZAddPrizeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		7254841A1A34931100B6B8EF /* GNZPrize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPrize.m; sourceTree = "<group>"; };
 		7254841C1A349E1300B6B8EF /* GNZPrizeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZPrizeManager.h; sourceTree = "<group>"; };
 		7254841D1A349E1300B6B8EF /* GNZPrizeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZPrizeManager.m; sourceTree = "<group>"; };
+		7254841F1A34B2FE00B6B8EF /* GNZAddPrizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNZAddPrizeViewController.h; sourceTree = "<group>"; };
+		725484201A34B2FE00B6B8EF /* GNZAddPrizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNZAddPrizeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				725483EB1A33DE2000B6B8EF /* GNZChoosePartnerViewController.m */,
 				725484111A34091D00B6B8EF /* GNZPrizesTableViewController.h */,
 				725484121A34091D00B6B8EF /* GNZPrizesTableViewController.m */,
+				7254841F1A34B2FE00B6B8EF /* GNZAddPrizeViewController.h */,
+				725484201A34B2FE00B6B8EF /* GNZAddPrizeViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				7254841E1A349E1300B6B8EF /* GNZPrizeManager.m in Sources */,
 				7254841B1A34931100B6B8EF /* GNZPrize.m in Sources */,
 				725483E61A33DE2000B6B8EF /* main.m in Sources */,
+				725484211A34B2FE00B6B8EF /* GNZAddPrizeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
